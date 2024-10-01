@@ -1,16 +1,22 @@
-# country_details_app
-
-A new Flutter project.
-
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To run this project, you'll need to have **Flutter 3.24.1** and **Dart 3.5.1** installed.
 
-A few resources to get you started if this is your first Flutter project:
+### Steps to Run the Project
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. Open the terminal in the project root folder.
+2. Run the following command to install the necessary dependencies:
+   ```bash
+   flutter pub get
+   ```
+3. Run the following command to run the app:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+   ```bash
+   flutter run
+   ```
+
+   ### Demo VIEDO
+
+### Demo Video
+
+    ![Demo GIF](assets/video/Simulator Screen Recording - iPhone 15 Pro Max - 2024-10-01 at 19.19.42.gif)
