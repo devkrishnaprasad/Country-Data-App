@@ -21,14 +21,15 @@ class HomeApiService {
     List<CountryDetailElement> countries = [];
 
     if (await internetCheckConnection()) {
-      try {
-        for (String url in urls) {
+      for (String url in urls) {
+        try {
           var response = await dio.request(
             url,
             options: Options(
               method: 'GET',
             ),
           );
+
           if (response.statusCode == 200) {
             var data = response.data;
 
@@ -37,20 +38,18 @@ class HomeApiService {
                   .map((item) => CountryDetailElement.fromJson(item))
                   .toList());
             } else {
-              throw Exception('Response error');
+              log('Response error for URL: $url');
             }
           } else {
-            throw Exception('Failed to load country data');
+            log('Failed to load country data from URL: $url with status code: ${response.statusCode}');
           }
+        } catch (e) {
+          log('Error fetching data from URL: $url - $e');
         }
-
-        log('The list length is ${countries.length}');
-      } catch (e) {
-        log('Error: $e');
-        rethrow;
       }
       return countries;
     } else {
+      log('No internet connection');
       return [];
     }
   }
