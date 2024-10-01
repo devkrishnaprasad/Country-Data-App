@@ -17,6 +17,5 @@ To run this project, you'll need to have **Flutter 3.24.1** and **Dart 3.5.1** i
 
    ### Demo VIEDO
 
-    <div align="center">
-    <video src="https://github.com/devkrishnaprasad/Country-Data-App/blob/filter_list/assets/video/Simulator%20Screen%20Recording%20-%20iPhone%2015%20Pro%20Max%20-%202024-10-01%20at%2019.19.42.gif"/>
+    <video src="https://e-learning-app.s3.amazonaws.com/Simulator+Screen+Recording+-+iPhone+15+Pro+Max+-+2024-10-01+at+19.19.05.mp4">
     </div>
